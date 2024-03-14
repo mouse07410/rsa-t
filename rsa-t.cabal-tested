@@ -6,8 +6,8 @@ description:    Please see the README on GitHub at <https://github.com/mouse0741
 homepage:       https://github.com/mouse07410/rsa-t#readme
 bug-reports:    https://github.com/mouse07410/rsa-t/issues
 author:         Mouse
-maintainer:     uri@mit.edu
-copyright:      (C) 2022 MIT
+maintainer:     mouse07410@noreply.github.com
+copyright:      (C) 2024 MIT
 license:        BSD-3-Clause
 license-file:   LICENSE
 build-type:     Simple
