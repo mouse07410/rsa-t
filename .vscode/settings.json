@@ -1,0 +1,48 @@
+{
+    "actionButtons": {
+        "commands": [
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Start GHCi",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cabal repl --repl-options '-interactive-print=Text.Pretty.Simple.pPrint' --build-depends pretty-simple"
+            },
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cabal build",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cabal build"
+            },
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cabal run",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cabal run exe:${workspaceFolderBasename}"
+            },
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cabal test",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cabal run exe:${workspaceFolderBasename}-test"
+            },
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cabal clean",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cabal clean"
+            },
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cabal update",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cabal update"
+            }
+        ]
+    }
+}

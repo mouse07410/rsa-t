@@ -1,0 +1,35 @@
+cabal-version: 3.4
+
+name:           rsa-t
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/mouse07410/rsa-t#readme>
+homepage:       https://github.com/mouse07410/rsa-t#readme
+bug-reports:    https://github.com/mouse07410/rsa-t/issues
+author:         Mouse
+maintainer:     uri@mit.edu
+copyright:      (C) 2022 MIT
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/mouse07410/rsa-t
+
+common warnings
+    ghc-options: -Wall
+
+executable kyber-t
+    import:           warnings
+    default-language: GHC2021
+    hs-source-dirs:   app
+    -- we do not have a library, so we do not need to specify the source directory
+    main-is:          Main.hs
+    build-depends:
+        base >=4.19.1.0 && < 5.0.0.0
+        , botan-low >= 0.0.1 && < 2.0.0
+        , bytestring >= 0.12.1.0 && <= 1.0.0.0
+        , memory >= 0.18.0 && < 1.0.0

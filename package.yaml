@@ -1,0 +1,61 @@
+name:                rsa-t
+version:             0.1.0.0
+github:              "mouse07410/rsa-t"
+license:             BSD-3-Clause
+author:              "Mouse"
+maintainer:          "mouse07410@noreply.github.com"
+copyright:           "(C) 2024 MIT"
+
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+description:         Please see the README on GitHub at <https://github.com/mouse07410/rsa-t#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- memory >= 0.18.0 && < 1.0.0
+- bytestring >= 0.12.1.0 && < 1.0.0.0
+- botan-low
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: src
+
+executables:
+  rsa-t-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - rsa-t
+    - memory
+    - bytestring
+    - botan-low
+
+tests:
+  rsa-t-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - rsa-t
+    - memory
+    - bytestring
+    - botan-low
