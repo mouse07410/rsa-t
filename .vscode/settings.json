@@ -34,7 +34,7 @@
                 "name": "Stack clean",
                 "color": "white",
                 "singleInstance": true,
-                "command": "stack clean; rm -rf ./.stack-work"
+                "command": "stack clean && rm -rf .stack-work"
             },
             {
                 "cwd": "${workspaceFolder}",
