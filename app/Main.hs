@@ -25,10 +25,10 @@ main = do
     -- Alice generates her private and public keys
     alicePrivKey <- privKeyCreate RSA "2048" rng
     alicePubKey <- privKeyExportPubKey alicePrivKey
-    -- Set KDF for KEM and set generated shared key size in bits
+    -- Set KDF for KEM and set generated shared key size in bytes
     let kdfAlg = hkdf SHA384
     salt <- rngGet rng 4
-    let sharedKeyLength = 256
+    let sharedKeyLength = 32
 
     -- Bob (presumably) receives Alice's public key and generates shared secret
     encryptCtx <- kemEncryptCreate alicePubKey kdfAlg
