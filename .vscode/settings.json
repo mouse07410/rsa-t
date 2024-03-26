@@ -44,5 +44,6 @@
                 "command": "stack update"
             }
         ]
-    }
+    },
+    "cmake.configureOnOpen": false
 }
