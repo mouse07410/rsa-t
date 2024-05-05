@@ -3,8 +3,8 @@
 
 # You *could* specify something like "resolver: ghc-9.8.2". But
 # unless an LTS or nightly is specified here, would have to provide
-# dependencies including their SHA tags - not convenient. 
-resolver: nightly-2024-03-14
+# dependencies including their SHA tags - not convenient.
+resolver: nightly-2024-05-05
 
 packages:
 - .
@@ -31,4 +31,3 @@ require-stack-version: ">=2.15"
 # are.
 #extra-include-dirs: [/opt/local/include/botan-3, /opt/local/include, /usr/local/include]
 #extra-lib-dirs: [/opt/local/lib/liconv, /opt/local/lib, /usr/local/lib]
-

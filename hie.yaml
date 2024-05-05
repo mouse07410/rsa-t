@@ -1,0 +1,10 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "rsa-t:lib"
+
+    - path: "./app/Main.hs"
+      component: "rsa-t:exe:rsa-t-exe"
+
+    - path: "./test"
+      component: "rsa-t:test:rsa-t-test"
