@@ -4,15 +4,17 @@
 # You *could* specify something like "resolver: ghc-9.8.2". But
 # unless an LTS or nightly is specified here, would have to provide
 # dependencies including their SHA tags - not convenient.
-resolver: nightly-2024-05-05
+resolver: nightly-2024-08-26
 
 packages:
 - .
 
 # Here comes the pointer to Haskell bindings/API for Botan
+#- git: https://github.com/haskell-cryptography/botan.git
+#commit: 'bdab8fa8d87bc4e28Yp179119ac3612db132b4ff'
 extra-deps:
-- git: https://github.com/haskell-cryptography/botan.git
-  commit: 'bdab8fa8d87bc4e282d179119ac3612db132b4ff'
+- github: 'haskellfoundation/botan'
+  commit: '99de68c3938187b7ab740c6534ec032a4a236747'
   subdirs:
   - botan-bindings
   - botan-low
