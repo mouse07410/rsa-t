@@ -4,7 +4,7 @@
 # You *could* specify something like "resolver: ghc-9.8.2". But
 # unless an LTS or nightly is specified here, would have to provide
 # dependencies including their SHA tags - not convenient.
-resolver: nightly-2024-08-26
+resolver: lts-24.44
 
 packages:
 - .
