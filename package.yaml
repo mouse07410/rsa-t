@@ -17,6 +17,7 @@ dependencies:
 - memory >= 0.18.0 && < 1.0.0
 - bytestring >= 0.12.1.0 && < 1.0.0.0
 - botan-low
+#- botan-low >= 0.0.2.0
 
 ghc-options:
 - -Wall
